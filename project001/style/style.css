@@ -120,7 +120,7 @@ main.projects {
     text-align: center;
 }
 
-@media only screen and (max-width: 972px) {
+@media only screen and (max-width: 1150px) {
     main.projects {
     grid-template-columns: 100vw;
     grid-template-rows: 100px 450px 450px;
@@ -130,47 +130,6 @@ main.projects {
     "second"
     ;
     }
-
-    div.iframe-container {
-    position: relative;
-    overflow: hidden;
-    width: 100vw;
-    height: 450px;
-    }
-
-    iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100vw;
-    height: 450px;
-    margin: 0px auto;
-    }
-}
-
-div.iframe-container {
-    position: relative;
-    overflow: hidden;
-    width: 90vw;
-    height: 400px;
-    padding-top: 56.25%;
-
-    margin: 0px 2.5vw;
-}
-
-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 50%;
-    height: 50%;
-
-    border: 2px solid green;
-    box-shadow: 1px 1px 5px green;
 }
 
 h1.h1-projects {
