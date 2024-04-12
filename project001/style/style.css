@@ -111,10 +111,11 @@ main.projects {
     display: grid;
 
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 100px 450px;
+    grid-template-rows: 100px 268px 50px;
     grid-template-areas:
         "h1 h1"
         "first second"
+        "p-first p-second"
     ;
 
     text-align: center;
@@ -123,12 +124,19 @@ main.projects {
 @media only screen and (max-width: 1015px) {
     main.projects {
     grid-template-columns: 100vw;
-    grid-template-rows: 100px 450px 450px;
+    grid-template-rows: 100px 268px 50px 268px 50px;
     grid-template-areas:
     "h1"
     "first"
+    "p-first"
     "second"
+    "p-second"
     ;
+    }
+
+    img {
+        display: block;
+        max-width: 300px;
     }
 }
 
@@ -138,26 +146,39 @@ h1.h1-projects {
     margin-top: 25px;
 }
 
-video {
-    max-width: 560px;
-    max-height: 315px;
-}
-
 section.first {
     grid-area: first;
     max-width: 100%;
+
+    border: 2px solid white;
+}
+
+p.first {
+    grid-area: p-first;
 }
 
 section.second {
     grid-area: second;
     max-width: 100%;
 
+    border: 2px solid white;
+}
+
+p.second {
+    grid-area: p-second;
+}
+
+img {
+    max-width: 40vw;
+    display: block;
+    margin: auto;
+
+    border: 2px solid green;
 }
 
 section {
-    margin: auto;
     max-width: 350px;
-    height: 1000px;
+    height: 268px;
 }
 
 main>section>h1 {
