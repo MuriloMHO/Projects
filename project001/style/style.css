@@ -17,7 +17,7 @@ header {
     display: grid;
 
     grid-template-columns: 25vw 50vw 25vw;
-    grid-template-rows: 70px;
+    grid-template-rows: 46px;
     grid-template-areas:
         "name info contact"
     ;
@@ -29,7 +29,7 @@ header {
         display: grid;
 
         grid-template-columns: 100vw;
-        grid-template-rows: 70px 50px 50px;
+        grid-template-rows: 47px 48px 48px;
         grid-template-areas:
             "name"
             "info"
@@ -54,18 +54,15 @@ header>h1 {
     padding: 5px;
 
     background-color: green;
-    border-radius: 5px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 header>p.info {
     grid-area: info;
 
-    padding: 14px;
+    padding: 15px;
 
     background-color: rgba(211, 211, 211, 0.137);
-    border-radius: 5px 0px 0px 5px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 header>p.info>a {
@@ -85,10 +82,9 @@ header>p.info>a:hover {
 header>p.contact {
     grid-area: contact;
 
-    padding: 14px;
+    padding: 15px;
 
     background-color: rgba(211, 211, 211, 0.137);
-    border-radius: 0px 5px 5px 0px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
@@ -108,9 +104,9 @@ main.projects {
     display: grid;
 
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 150px 200px 50px;
+    grid-template-rows: 260px 200px 50px;
     grid-template-areas:
-        "h1 h1"
+        "top top"
         "first second"
         "p-first p-second"
     ;
@@ -121,9 +117,9 @@ main.projects {
 @media only screen and (max-width: 1015px) {
     main.projects {
     grid-template-columns: 100vw;
-    grid-template-rows: 100px 200px 50px 200px 50px;
+    grid-template-rows: 260px 200px 50px 200px 50px;
     grid-template-areas:
-    "h1"
+    "top"
     "first"
     "p-first"
     "second"
@@ -132,10 +128,23 @@ main.projects {
     }
 }
 
-h1.h1-projects {
-    grid-area: h1;
+div.top {
+    grid-area: top;
 
+    text-align: center;
+    justify-content: center;
+
+    margin-bottom: 30px;
+}
+
+div.top>h1 {
     margin-top: 50px;
+}
+
+div.top>p {
+    width: 350px;
+    display: inline-block;
+    margin-top: 30px;
 }
 
 main.projects>p>a {
@@ -176,10 +185,19 @@ section {
     height: 100vh;
 }
 
+section.aboutme {
+    height: 700px;
+}
+
 main>section>h1 {
     padding: 20px 0px;
+    margin-top: 20px;
 }
 
 main>section>p {
     margin: 10px 0px;
+}
+
+footer {
+    grid-area: footer;
 }
