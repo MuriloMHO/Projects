@@ -171,6 +171,38 @@ p.second {
     grid-area: p-second;
 }
 
+section.section-logo {
+    margin-top: 50px;
+}
+
+p.p-logo {
+    padding: 10px 5px;
+}
+
+p.p-logo>a {
+    text-decoration: none;
+    color: white;
+}
+
+p.p-logo>a:hover {
+    text-decoration: underline;
+}
+
+img.logo {
+    width: 30px;
+    height: 30px;
+
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+
+    display: inline-block;
+}
+
+img.logo.github {
+    background-color: white;
+}
+
 img {
     max-width: 375px;
     display: block;
@@ -182,11 +214,12 @@ img {
 
 section {
     max-width: 350px;
-    height: 100vh;
+    height: 350px;
 }
 
 section.aboutme {
-    height: 700px;
+    max-width: 500px;
+    height: 500px;
 }
 
 main>section>h1 {
