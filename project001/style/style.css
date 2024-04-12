@@ -24,7 +24,7 @@ header {
 
 }
 
-@media only screen and (max-width: 968px) {
+@media only screen and (max-width: 1015px) {
     header {
         display: grid;
 
@@ -120,7 +120,7 @@ main.projects {
     text-align: center;
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1015px) {
     main.projects {
     grid-template-columns: 100vw;
     grid-template-rows: 100px 450px 450px;
@@ -136,6 +136,11 @@ h1.h1-projects {
     grid-area: h1;
 
     margin-top: 25px;
+}
+
+video {
+    max-width: 560px;
+    max-height: 315px;
 }
 
 section.first {
