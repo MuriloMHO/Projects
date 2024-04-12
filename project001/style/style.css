@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+
+    display: grid;
+
+    grid-template-columns: 25vw 50vw 25vw;
+    grid-template-rows: 70px;
+    grid-template-areas:
+        "name info contact"
+    ;
+
+}
+
+@media only screen and (max-width: 672px) {
+    header {
+        display: grid;
+
+        grid-template-columns: 100vw;
+        grid-template-rows: 70px 50px 50px;
+        grid-template-areas:
+            "name"
+            "info"
+            "contact"
+        ;
+    }
+}
+
+header {
+    text-align: center;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header>h1 {
+    grid-area: name;
+
+    padding: 5px;
+
+    background-color: green;
+    border-radius: 5px;
+}
+
+header>p.info {
+    grid-area: info;
+
+    padding: 14px;
+
+    background-color: rgba(211, 211, 211, 0.137);
+    border-radius: 5px 0px 0px 5px;
+}
+
+header>p.info>a {
+    margin: 0px 15px;
+    padding: 5px;
+
+    background-color: rgba(0, 255, 0, 0.13);
+    border-radius: 5px;
+}
+
+header>p.info>a:hover {
+    background-color: green;
+    color: black;
+}
+
+header>p.contact {
+    grid-area: contact;
+
+    padding: 14px;
+
+    background-color: rgba(211, 211, 211, 0.137);
+    border-radius: 0px 5px 5px 0px;
+}
+
+header>p.contact:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+
+    height: 650px;
+
+    justify-content: center;
+}
+
+section {
+    max-width: 350px;
+    height: 1000x;
+}
+
+
+
+main>section>h1 {
+    padding: 20px 0px;
+}
+
+main>section>p {
+    margin: 10px 0px;
+}
