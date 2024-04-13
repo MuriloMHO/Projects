@@ -12,6 +12,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*<header>*/
+
 header {
 
     display: grid;
@@ -92,13 +94,65 @@ header>p.contact:hover {
     text-decoration: underline;
 }
 
+/*</header>*/
+
 main {
     display: flex;
 
-    height: 650px;
-
+    padding: 15px;
     justify-content: center;
 }
+
+
+section {
+    max-width: 350px;
+    height: 350px;
+}
+
+section>h1 {
+    padding: 20px 0px;
+    margin-top: 20px;
+}
+
+section>p {
+    margin: 10px 0px;
+}
+
+/*<index.html*/
+
+section>p {
+    text-indent: 10px;
+    line-height: 160%;
+}
+
+/*</index.html*/
+
+/*<aboutme.html>*/
+
+main.main-aboutme {
+    height: 850px;
+}
+
+section.aboutme {
+    max-width: 500px;
+    height: 500px;
+}
+
+section.aboutme>p {
+    text-indent: 10px;
+}
+
+section.aboutme>ul {
+    list-style-position: inside;
+}
+
+section.aboutme>ul>li {
+    margin: 10px 0px;
+}
+
+/*</aboutme.html>*/
+
+/*<projects.html>*/
 
 main.projects {
     display: grid;
@@ -116,19 +170,19 @@ main.projects {
 
 @media only screen and (max-width: 1015px) {
     main.projects {
-    grid-template-columns: 100vw;
-    grid-template-rows: 260px 200px 50px 200px 50px;
-    grid-template-areas:
-    "top"
-    "first"
-    "p-first"
-    "second"
-    "p-second"
-    ;
+        grid-template-columns: 100vw;
+        grid-template-rows: 260px 200px 50px 200px 50px;
+        grid-template-areas:
+            "top"
+            "first"
+            "p-first"
+            "second"
+            "p-second"
+        ;
     }
 }
 
-div.top {
+div.top-projects {
     grid-area: top;
 
     text-align: center;
@@ -137,27 +191,13 @@ div.top {
     margin-bottom: 30px;
 }
 
-div.top>h1 {
-    margin-top: 50px;
-}
-
-div.top>p {
-    width: 350px;
-    display: inline-block;
-    margin-top: 30px;
-}
-
-main.projects>p>a {
-    color: white;
-}
-
 section.first {
     grid-area: first;
 
     max-width: 100%;
 }
 
-p.first {
+p.p-first {
     grid-area: p-first;
 }
 
@@ -167,9 +207,36 @@ section.second {
     max-width: 100%;
 }
 
-p.second {
+p.p-second {
     grid-area: p-second;
 }
+
+div.top-projects>h1 {
+    margin-top: 50px;
+}
+
+div.top-projects>p {
+    width: 350px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+main.projects>p>a {
+    color: white;
+}
+
+img.img-projects {
+    max-width: 375px;
+    display: block;
+    margin: auto;
+
+    border: 2px solid green;
+    box-shadow: 1px 1px 1px green;
+}
+
+/*</projects.html>*/
+
+/*<contacts.html>*/
 
 section.section-logo {
     margin-top: 50px;
@@ -203,34 +270,4 @@ img.logo.github {
     background-color: white;
 }
 
-img {
-    max-width: 375px;
-    display: block;
-    margin: auto;
-
-    border: 2px solid green;
-    box-shadow: 1px 1px 1px green;
-}
-
-section {
-    max-width: 350px;
-    height: 350px;
-}
-
-section.aboutme {
-    max-width: 500px;
-    height: 500px;
-}
-
-main>section>h1 {
-    padding: 20px 0px;
-    margin-top: 20px;
-}
-
-main>section>p {
-    margin: 10px 0px;
-}
-
-footer {
-    grid-area: footer;
-}
+/*</contacts.html>*/
